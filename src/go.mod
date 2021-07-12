@@ -17,7 +17,6 @@ require (
 	github.com/iris-contrib/blackfriday v2.0.0+incompatible // indirect
 	github.com/iris-contrib/pongo2 v0.0.1 // indirect
 	github.com/jinzhu/gorm v1.9.12 // indirect
-	github.com/kataras/iris/v12 v12.2.0-alpha.0.20201209053710-4431294a2ee9
 	github.com/lib/pq v1.7.0
 	github.com/mediocregopher/mediocre-go-lib v0.0.0-20181029021733-cb65787f37ed // indirect
 	github.com/ryanuber/columnize v2.1.0+incompatible // indirect
@@ -26,4 +25,5 @@ require (
 	xorm.io/cmd/xorm v0.0.0-20191108140657-006dbf24bb9b // indirect
 	xorm.io/core v0.7.2
 	xorm.io/xorm v1.0.5
+	github.com/kataras/iris/v12 v12.1.7
 )

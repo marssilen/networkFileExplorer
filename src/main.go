@@ -78,6 +78,28 @@ func main() {
 			panic(err)
 		}
 	}
+	
+	
+	fmt.Println("Server Started")
+	app := iris.Default()
+	validate = validator.New()
+
+	tmpl := iris.HTML("view", ".html").
+		Layout("shared/layout.html").
+		Reload(true)
+	app.RegisterView(tmpl)
+	app.HandleDir("/public", "view/public")
+	app.OnAnyErrorCode(func(ctx iris.Context) {
+		ctx.ViewData("Message", ctx.Values().
+			GetStringDefault("message", "The page you're looking for doesn't exist"))
+		ctx.View("shared/error.html")
+	})
+	WebRoutes(app)
+//	app.Run(iris.Addr(":8081"), iris.WithoutServerError(iris.ErrServerClosed))
+	
+	
+	
+	
 	validate = validator.New()
 	app := iris.New()
 	ApiRoutes(app)
