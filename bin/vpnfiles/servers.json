@@ -1,0 +1,32 @@
+[
+ {
+  "id": 50,
+  "ip": "192.168.136.58",
+  "location": "CANADA_WINDOWS",
+  "status": "1400",
+  "online_users": "52",
+  "last_update": 26820996,
+  "id_server": "1400",
+  "port": "54371"
+ },
+ {
+  "id": 2,
+  "ip": "192.168.136.31",
+  "location": "Esfahan",
+  "status": "1400",
+  "online_users": "52",
+  "last_update": 26820996,
+  "id_server": "1400",
+  "port": "54371"
+ },
+ {
+  "id": 3,
+  "ip": "192.168.136.32",
+  "location": "Yazd",
+  "status": "1400",
+  "online_users": "52",
+  "last_update": 26820996,
+  "id_server": "1400",
+  "port": "54371"
+ }
+]

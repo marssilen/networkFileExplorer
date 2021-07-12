@@ -1,0 +1,12 @@
+[Unit]
+Description=se_vpngo Service
+After=network.target network.service
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/vpngo
+Restart=always
+LimitCORE=infinity
+
+[Install]
+WantedBy=multi-user.target
